@@ -10,7 +10,7 @@ export class HelloComponent {
   @Input() name: string = null;
   @Output() sayHello: EventEmitter<string> = new EventEmitter<string>();
 
-  inputName: string = 'Jhon';
+  inputName: string = '';
 
   nameList: Array<string> = [];
 
@@ -26,11 +26,6 @@ export class HelloComponent {
     this.nameList.push(this.inputName);
     this.inputName = '';
     console.log(this.nameList);
-  }
-
-  updateInputName(event: any) {
-    this.inputName = event.target.value;
-    console.log(this.inputName);
   }
 
 }

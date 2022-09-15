@@ -9,4 +9,8 @@ export class AppComponent {
 
   public myName: string = "Carlos Two";
 
+  onSayHello(message: string) {
+    console.log(message);
+  }
+
 }

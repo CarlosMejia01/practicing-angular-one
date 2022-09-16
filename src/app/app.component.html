@@ -3,7 +3,7 @@
   <h1>
     Let's learn Angular
   </h1>
-  <div>
+  <div [class.hidden]="myHelloComponent.inputName.length == 0">
     Writting '{{myHelloComponent.inputName}} in HelloComponent'
   </div>
   <br>

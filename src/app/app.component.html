@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
+  <h1 [style.color]="myHelloComponent.nameList.length > 0 ? 'red' : 'black'">
     Let's learn Angular
   </h1>
   <div [class.hidden]="myHelloComponent.inputName.length == 0">
